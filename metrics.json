@@ -1,0 +1,139 @@
+{
+  "dummy_baseline_accuracy": 0.824,
+  "logreg_default_threshold": {
+    "model": "logistic_regression",
+    "threshold": 0.5,
+    "roc_auc": 0.8166,
+    "pr_auc": 0.588,
+    "report": {
+      "0": {
+        "precision": 0.9175455417066155,
+        "recall": 0.7742718446601942,
+        "f1-score": 0.8398420359806933,
+        "support": 2472.0
+      },
+      "1": {
+        "precision": 0.38949671772428884,
+        "recall": 0.6742424242424242,
+        "f1-score": 0.49375866851595007,
+        "support": 528.0
+      },
+      "accuracy": 0.7566666666666667,
+      "macro avg": {
+        "precision": 0.6535211297154522,
+        "recall": 0.7242571344513091,
+        "f1-score": 0.6668003522483217,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.824608948685726,
+        "recall": 0.7566666666666667,
+        "f1-score": 0.7789313633068985,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1914,
+        558
+      ],
+      [
+        172,
+        356
+      ]
+    ]
+  },
+  "rf_default_threshold": {
+    "model": "random_forest",
+    "threshold": 0.5,
+    "roc_auc": 0.8096,
+    "pr_auc": 0.5769,
+    "report": {
+      "0": {
+        "precision": 0.9138627187079408,
+        "recall": 0.8240291262135923,
+        "f1-score": 0.8666241225271218,
+        "support": 2472.0
+      },
+      "1": {
+        "precision": 0.4357976653696498,
+        "recall": 0.6363636363636364,
+        "f1-score": 0.5173210161662818,
+        "support": 528.0
+      },
+      "accuracy": 0.791,
+      "macro avg": {
+        "precision": 0.6748301920387954,
+        "recall": 0.7301963812886143,
+        "f1-score": 0.6919725693467018,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.8297232693204015,
+        "recall": 0.791,
+        "f1-score": 0.8051467758076138,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        2037,
+        435
+      ],
+      [
+        192,
+        336
+      ]
+    ]
+  },
+  "rf_cost_optimal_threshold": {
+    "model": "random_forest",
+    "threshold": 0.27,
+    "roc_auc": 0.8096,
+    "pr_auc": 0.5769,
+    "report": {
+      "0": {
+        "precision": 0.9583333333333334,
+        "recall": 0.44660194174757284,
+        "f1-score": 0.609271523178808,
+        "support": 2472.0
+      },
+      "1": {
+        "precision": 0.2597402597402597,
+        "recall": 0.9090909090909091,
+        "f1-score": 0.40404040404040403,
+        "support": 528.0
+      },
+      "accuracy": 0.528,
+      "macro avg": {
+        "precision": 0.6090367965367965,
+        "recall": 0.6778464254192409,
+        "f1-score": 0.506655963609606,
+        "support": 3000.0
+      },
+      "weighted avg": {
+        "precision": 0.8353809523809524,
+        "recall": 0.528,
+        "f1-score": 0.5731508462104488,
+        "support": 3000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1104,
+        1368
+      ],
+      [
+        48,
+        480
+      ]
+    ],
+    "expected_cost": 2772000.0
+  },
+  "cost_assumptions": {
+    "cost_false_negative": 15000,
+    "cost_false_positive": 1500
+  },
+  "cost_at_default_threshold_0.5": 3532500.0,
+  "cost_savings_from_tuning": 760500.0
+}
