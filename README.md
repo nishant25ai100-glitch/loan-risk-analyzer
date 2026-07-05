@@ -4,7 +4,7 @@ A loan default risk model with a full pipeline: data generation, preprocessing,
 model training with class-imbalance handling, business-cost-driven decision
 thresholding, permutation-based interpretability, a served REST API, and tests.
 
-## The problem, framed as a decision (not just a model)
+## The problem, framed as a decision 
 
 > Given an applicant's financial profile, estimate the probability they'll
 > default, and recommend **APPROVE** or **DENY**.
