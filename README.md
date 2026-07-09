@@ -156,7 +156,7 @@ curl -X POST http://localhost:8000/predict \
   }'
 ```
 
-## Known limitations / what i'll do with it 
+## Known limitations /  what I'd do with more time
 
 - **Fairness auditing**: haven't checked whether the model produces disparate
   outcomes across protected-adjacent variables (e.g. zip code as a proxy for
